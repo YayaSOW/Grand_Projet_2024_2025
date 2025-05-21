@@ -5,7 +5,15 @@ export interface Item {
   databaseId: string;
   calories: string;
   category: string;
-  description:
+  description: string;
+  id: string;
+  imageUrl: string;
+  price: string;
+  title: string;
+}
+/*
+
+description:
     | "curry"
     | "rice"
     | "fruits"
@@ -15,18 +23,35 @@ export interface Item {
     | "fish"
     | "drinks"
     | "others";
-  id: string;
-  imageUrl: string;
-  price: string;
-  title: string;
-}
+*/ 
 
 interface ItemsState {
   items: Item[] | null;
 }
 
 const initialState: ItemsState = {
-  items: null,
+  items:[
+  {
+      id: "1",
+      databaseId: "1",
+      title: "Fraises",
+      price: "5",
+      calories: "100",
+      category: "fruits",
+      description: "drinks et curry",
+      imageUrl: "/images/hero/delivery.png"
+    },
+    {
+      id: "2",
+      databaseId: "2",
+      title: "Pastèques",
+      price: "8",
+      calories: "175",
+      category: "fruits",
+      description: "rice et sucreries",
+      imageUrl: "/images/hero/fruits.png"
+    }
+  ]
 };
 
 export const itemsSlice = createSlice({
