@@ -4,30 +4,30 @@ import { NavHashLink } from "react-router-hash-link";
 const heroData = [
   {
     id: 1,
-    imageUrl: "/images/hero/ice-creames.png",
-    title: "Icecreams",
+    imageUrl: "/images/me/pot1.png",
+    title: "Glaces",
     description: "Chocolate & Vanilla",
     price: "5.0",
   },
   {
     id: 2,
-    imageUrl: "/images/hero/fruits.png",
-    title: "Fruits",
-    description: "Fresh & Juicy",
+    imageUrl: "/images/me/2/cer.png",
+    title: "Cereales",
+    description: "Mil-Mais-Fonio",
     price: "3.0",
   },
   {
     id: 3,
-    imageUrl: "/images/hero/drinks.png",
-    title: "Drinks",
-    description: "Refreshing",
+    imageUrl: "/images/me/patte.png",
+    title: "Pates",
+    description: "Pate Ditakh",
     price: "2.5",
   },
   {
     id: 4,
-    imageUrl: "/images/hero/fishes.png",
-    title: "Fishes",
-    description: "Grilled & Savory",
+    imageUrl: "/images/me/2/man_sec.png",
+    title: "Fruits Séchés",
+    description: "Mangue sechée",
     price: "5.0",
   },
 ];
@@ -50,13 +50,14 @@ const HeroContainer = () => {
           </div>
         </div>
         <p className="text-5xl md:text-7xl xl:text-8xl font-bold tracking-wide text-headingColor">
-          Get Your Products in <span className="text-primary">Minutes.</span>
+           Savourez la Fraîcheur en <span className="text-[#19b358]">Quelques Minutes.</span>
         </p>
         <p className="font-medium text-base xl:text-lg">
-          Welcome to Fruitsify, your one-stop online destination for all things
-          <span className="font-semibold"> fresh and delicious</span>! At
-          Fruitsify, we take pride in delivering the finest selection of fruits,
-          vegetables, meat, ice creams, and cold drinks right to your doorstep.
+           Bienvenue chez <span className="font-semibold">La Maison de la Creme Glacée</span>, votre référence en ligne pour des{" "}
+          <span className="font-semibold"> glaces artisanales</span> 100 % naturelles ! 
+  Nous vous proposons une sélection exquise de crèmes glacées aux fruits frais, 
+  fabriquées sans colorants ni conservateurs, livrées directement à votre porte pour un pur moment de bonheur.
+
         </p>
 
         <Button className="w-full xl:w-[500px] p-0" size="lg">

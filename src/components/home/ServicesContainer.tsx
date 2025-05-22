@@ -5,58 +5,40 @@ import ServiceCard from "../../../src/components/reusables/ServiceCard";
 const servicesData = [
   {
     id: 1,
-    title: "Fresh Fruits Delivery",
+    title: "Crème Glacée Naturelle",
     description:
-      "Get a wide variety of fresh fruits delivered to your doorstep. From apples to mangoes, we have it all.",
-    image: "/images/services/fresh-fruits.jpg",
+      " Plongez dans l’univers gourmand de nos crèmes glacées 100 % naturelles, élaborées à partir de fruits frais rigoureusement sélectionnés dans des vergers locaux. Chaque parfum est conçu sans colorants artificiels, sans additifs chimiques et sans conservateurs, afin de préserver toute la pureté et la richesse des saveurs authentiques.",
+    image: "/images/me/made.png",
     color: "bg-[#FFA1A1]",
     textColor: "#3DBE3D",
   },
   {
     id: 2,
-    title: "Farm-Fresh Vegetables",
+    title: "Des Crereales",
     description:
-      "Discover the goodness of farm-fresh vegetables. We deliver everything from leafy greens to exotic veggies.",
-    image: "/images/services/fresh-vegetables.jpg",
+      "Découvrez nos céréales artisanales “Made in Sénégal”, spécialement formulées pour combiner plaisir gustatif et bienfaits nutritionnels. Fabriquées à partir de grains locaux (mil, sorgho, maïs et niébé) soigneusement torréfiés et moulus, nos céréales offrent une richesse en fibres, protéines végétales et vitamines essentielles.",
+    image: "/images/me/2/cereales.png",
     color: "bg-[#A8E4A0]",
     textColor: "#FF5252",
   },
   {
     id: 3,
-    title: "Quality Rice Varieties",
+    title: "Pate",
     description:
-      "Choose from a range of high-quality rice varieties. Basmati, jasmine, and more, all at your convenience.",
-    image: "/images/services/rice.jpg",
+      "Plongez dans l’art culinaire avec notre vaste gamme de pâtes artisanales, produites avec des farines de blé dur premium et de l’eau de source pure. De la spaghetti traditionnelle aux penne rigate en passant par les tagliatelles, chaque forme est extrudée lentement au bronze, puis doucement séchée à basse température pour préserver l’amidon et garantir une tenue parfaite à la cuisson.",
+    image: "/images/me/patte.png",
     color: "bg-[#A0C7FF]",
     textColor: "#FF9500",
   },
   {
     id: 4,
-    title: "Dairy and Eggs",
+    title: "Fruits Séché",
     description:
-      "Enjoy dairy products like milk, cheese, and yogurt, along with farm-fresh eggs.",
-    image: "/images/services/eggs.jpg",
+      "Savourez l’intensité et la concentration des saveurs avec notre sélection de fruits séchés, issus des meilleurs vergers et cueillis à maturité optimale. Abricots moelleux, mangues fondantes, ananas délicatement sucrés et baies de goji gorgées d’antioxydants : chaque fruit est séché lentement, sans ajout de sucre ou de sirop, pour conserver toutes ses qualités nutritives et son goût naturel.",
+    image: "/images/me/2/man_sec.png",
     color: "bg-[#FFD79E]",
     textColor: "#0077B6",
-  },
-  {
-    id: 5,
-    title: "Organic Products",
-    description:
-      "Go organic with our selection of pesticide-free fruits, vegetables, and grains.",
-    image: "/images/services/organic-products.jpg",
-    color: "bg-[#FFB2D3]",
-    textColor: "#5F9E3D",
-  },
-  {
-    id: 6,
-    title: "Specialty Items",
-    description:
-      "Explore our specialty section for unique ingredients and gourmet products.",
-    image: "/images/services/special-products.jpg",
-    color: "bg-[#9FCC92]",
-    textColor: "#E64980",
-  },
+  }
 ];
 
 const ServicesContainer = () => {
@@ -68,10 +50,10 @@ const ServicesContainer = () => {
       <div className="py-6">
         <div className="flex flex-col sm:flex-row-reverse xl:flex-col items-center gap-4 relative">
           <h1 className="text-3xl sm:text-4xl md:text-6xl text-textColor font-black text-center">
-            Delivering <span className="text-primary">Freshness</span> to Your{" "}
-            <span className="text-primary">Doorstep</span>: Our{" "}
-            <span className="text-primary">Food</span>, Your{" "}
-            <span className="text-primary">Happiness</span>
+           Offrir la <span className="text-[#19b358]">fraîcheur</span> et le{" "}
+  <span className="text-[#19b358]">naturel</span> à chaque bouchée : Nos{" "}
+  <span className="text-[#19b358]">glaces</span> et produits, votre{" "}
+  <span className="text-[#19b358]">plaisir</span> au quotidien
           </h1>
           <Lottie className="max-sm:h-40" animationData={FarmerAnimation} />
         </div>

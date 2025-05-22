@@ -8,26 +8,30 @@ import { Item } from "./store/slices/itemsSlice";
 import Cart from "./components/cart/Cart";
 import { RootState } from "./store/store";
 import { AnimatePresence } from "framer-motion";
+import Footer from "./components/reusables/Footer"; // Importe le Footer
 
 const App = () => {
   const isCartOpen = useSelector((state: RootState) => state.cart.isCartOpen);
-  const dispath = useDispatch();
+  const dispatch = useDispatch();
   const fetchItems = async () => {
     const data = await getItems();
-    dispath(setItems(data as Item[]));
+    dispatch(setItems(data as Item[]));
   };
 
   useEffect(() => {
     fetchItems();
   }, []);
+
   return (
-    <div className="w-full h-auto flex flex-col ">
+    <div className="w-full min-h-screen flex flex-col">
       <Header />
-      <main className="mt-24 md:mt-28 w-full">
+      <main className="mt-24 md:mt-28 w-full flex-grow">
         <Outlet />
       </main>
       <AnimatePresence>{isCartOpen && <Cart />}</AnimatePresence>
+      <Footer /> {/* Ajoute le Footer ici */}
     </div>
   );
 };
+
 export default App;

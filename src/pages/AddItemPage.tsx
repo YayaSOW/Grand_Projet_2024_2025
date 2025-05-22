@@ -15,15 +15,10 @@ import { motion } from "framer-motion";
 import { saveItem } from "../utils/firebaseFunctions";
 
 export const categories = [
-  "fruits",
-  "curry",
-  "rice",
-  "vegetables",
-  "snaks",
-  "icecreams",
-  "fish",
-  "drinks",
-  "others",
+  "glaces",
+  "pate",
+  "cereales",
+  "fruit sec",
 ] as const;
 
 const formSchema = z.object({
@@ -171,28 +166,27 @@ const AddItemPage = () => {
 
         <div>
           <select
-            {...register("category")}
-            name="category"
-            id="category"
-            placeholder="Select category"
-            className="w-full text-lg capitalize cursor-pointer p-2 ring-1 !ring-gray-400 outline-primary "
-          >
-            {categories.map((category) => (
-              <option
-                key={category}
-                value={category}
-                className="capitalize hover:bg-primary cursor-pointer"
-              >
-                {category}
-              </option>
-            ))}
-          </select>
+  {...register("category")}
+  name="category"
+  id="category"
+  className="w-full text-lg capitalize cursor-pointer p-2 ring-1 !ring-gray-400 outline-primary"
+>
+  {categories.map((category) => (
+    <option
+      key={category}
+      value={category}
+      className="capitalize hover:bg-primary cursor-pointer"
+    >
+      {category}
+    </option>
+  ))}
+</select>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div className="flex flex-col gap-2 relative">
             <label htmlFor="title" className="text-lg font-medium">
-              Price $
+              Price Fcfa
             </label>
             <input
               type="text"
