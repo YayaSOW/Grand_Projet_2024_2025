@@ -63,7 +63,7 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({
         className="w-full mt-6 font-semibold justify-around text-lg"
         disabled={isSubmitting}
       >
-        <span>$ {totalPrice}</span>
+        <span>Fcfa {totalPrice}</span>
         <span className="flex gap-4 items-center">
           Checkout <BsArrowRight size={24} />
         </span>

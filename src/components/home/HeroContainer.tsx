@@ -7,28 +7,28 @@ const heroData = [
     imageUrl: "/images/me/pot1.png",
     title: "Glaces",
     description: "Chocolate & Vanilla",
-    price: "5.0",
+    price: "500",
   },
   {
     id: 2,
     imageUrl: "/images/me/2/cer.png",
     title: "Cereales",
     description: "Mil-Mais-Fonio",
-    price: "3.0",
+    price: "500",
   },
   {
     id: 3,
     imageUrl: "/images/me/patte.png",
     title: "Pates",
     description: "Pate Ditakh",
-    price: "2.5",
+    price: "500",
   },
   {
     id: 4,
     imageUrl: "/images/me/2/man_sec.png",
     title: "Fruits Séchés",
     description: "Mangue sechée",
-    price: "5.0",
+    price: "1000",
   },
 ];
 

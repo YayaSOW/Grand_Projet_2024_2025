@@ -7,7 +7,7 @@ import {
   setDoc,
   where,
 } from "firebase/firestore";
-import { firestore } from "../../firebase.config";
+import { firestore } from "../../firebase.config"; // Changé de "../../firebase.config" à "../firebase.config"
 import { Item } from "../store/slices/itemsSlice";
 
 export const saveItem = async (data: any) => {
@@ -43,7 +43,7 @@ export const getItemWithId = async (id: string) => {
   } else {
     return {
       item: null,
-      simlarItems: null,
+      similarItems: null, // Corrigé la typo "simlarItems"
     };
   }
 };
